@@ -6,7 +6,7 @@ let
     owner = "Xe";
     repo = "jvozba";
     rev = "v${version}";
-    hash = "07zra87h0lgi4r3hsh8q08pzrxdnvlfa1zm8yj0vv4iysrk3y3x2";
+    sha256 = "07zra87h0lgi4r3hsh8q08pzrxdnvlfa1zm8yj0vv4iysrk3y3x2";
   };
 
   out = pkgs.buildGoModule {

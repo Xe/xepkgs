@@ -6,7 +6,7 @@ let
     owner = "Xe";
     repo = "johaus";
     rev = "v${version}";
-    hash = "sha256:0nwcfv40mhiyp2zzzsxg0j7717asdmhshg40dbnkwmqwhiqikdnb";
+    sha256 = "0nwcfv40mhiyp2zzzsxg0j7717asdmhshg40dbnkwmqwhiqikdnb";
   };
 
   out = pkgs.buildGoModule {

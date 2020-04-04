@@ -14,9 +14,11 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  dwm = pkgs.callPackage ./pkgs/dwm { };
   gopls = pkgs.callPackage ./pkgs/gopls { };
   johaus = pkgs.callPackage ./pkgs/johaus { };
   minica = pkgs.callPackage ./pkgs/minica { };
   quickserv = pkgs.callPackage ./pkgs/quickserv { };
+  st = pkgs.callPackage ./pkgs/st { };
 }
 

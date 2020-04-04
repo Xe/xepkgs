@@ -11,12 +11,4 @@ pkgs.st.override rec {
     ./st-boxdraw_v2-0.8.2.diff
     ./st-anysize-0.8.1.diff
   ];
-
-  meta = {
-    homepage = "https://suckless.org/";
-    description = "simple terminal emulator";
-    license = pkgs.stdenv.lib.licenses.mit;
-    maintainers = [ ];
-    platforms = with pkgs.stdenv.lib.platforms; all;
-  };
 }

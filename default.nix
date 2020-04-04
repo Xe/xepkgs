@@ -14,8 +14,9 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  example-package = pkgs.callPackage ./pkgs/example-package { };
-  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
-  # ...
+  gopls = pkgs.callPackage ./pkgs/gopls { };
+  johaus = pkgs.callPackage ./pkgs/johaus { };
+  minica = pkgs.callPackage ./pkgs/minica { };
+  quickserv = pkgs.callPackage ./pkgs/quickserv { };
 }
 

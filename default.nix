@@ -18,7 +18,5 @@
   johaus = pkgs.callPackage ./pkgs/johaus { };
   minica = pkgs.callPackage ./pkgs/minica { };
   quickserv = pkgs.callPackage ./pkgs/quickserv { };
-
-  zig = pkgs.callPackage ./pkgs/zig.nix { };
 }
 

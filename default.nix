@@ -42,6 +42,7 @@ rec {
   nix-simple-deploy = pkgs.callPackage ./pkgs/nix-simple-deploy { };
   orca = pkgs.callPackage ./pkgs/orca { };
   quickserv = pkgs.callPackage ./pkgs/quickserv { };
+  sctd = pkgs.callPackage ./pkgs/sctd { };
   sm64pc = pkgs.callPackage ./pkgs/sm64pc { };
   st = pkgs.callPackage ./pkgs/st { };
   sw = pkgs.callPackage ./pkgs/sw { };

@@ -14,14 +14,19 @@ rec {
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  # Libraries
+  girara = pkgs.callPackage ./pkgs/girara {
+    gtk = pkgs.gtk3;
+  };
+  libutf = pkgs.callPackage ./pkgs/libutf { };
+
+  # Programs
+
   cabytcini = pkgs.callPackage ./pkgs/cabytcini { };
   comma = pkgs.callPackage ./pkgs/comma { };
   deno = pkgs.callPackage ./pkgs/deno { };
   discord = pkgs.callPackage ./pkgs/discord { };
   dwm = pkgs.callPackage ./pkgs/dwm { };
-  girara = pkgs.callPackage ./pkgs/girara {
-    gtk = pkgs.gtk3;
-  };
   gopls = pkgs.callPackage ./pkgs/gopls { };
   gruvbox-css = pkgs.callPackage ./pkgs/gruvbox-css { };
   hewwo = pkgs.callPackage ./pkgs/hewwo { };
@@ -29,6 +34,7 @@ rec {
   ix = pkgs.callPackage ./pkgs/ix { };
   johaus = pkgs.callPackage ./pkgs/johaus { };
   jvozba = pkgs.callPackage ./pkgs/jvozba { };
+  lchat = pkgs.callPackage ./pkgs/lchat { inherit libutf; };
   luakit = pkgs.callPackage ./pkgs/luakit {
     inherit (pkgs.luajitPackages) luafilesystem;
   };

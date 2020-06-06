@@ -1,7 +1,7 @@
 { stdenv, fetchFromGitHub, rustPlatform, pkg-config, libX11, libXrandr }:
 
 rustPlatform.buildRustPackage rec {
-  pname = "stcd";
+  pname = "sctd";
   src = fetchFromGitHub (builtins.fromJSON (builtins.readFile ./source.json));
 
   buildInputs = [

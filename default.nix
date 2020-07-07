@@ -30,8 +30,6 @@ rec {
   hewwo = pkgs.callPackage ./pkgs/hewwo { };
   ii = pkgs.callPackage ./pkgs/ii { };
   ix = pkgs.callPackage ./pkgs/ix { };
-  johaus = pkgs.callPackage ./pkgs/johaus { };
-  jvozba = pkgs.callPackage ./pkgs/jvozba { };
   lchat = pkgs.callPackage ./pkgs/lchat { inherit libutf; };
   luakit = pkgs.callPackage ./pkgs/luakit {
     inherit (pkgs.luajitPackages) luafilesystem;

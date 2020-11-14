@@ -1,6 +1,9 @@
 {
   "url": "https://git.sr.ht/~rabbits/orca",
-  "rev": "f14ce64fd1dc9b81ba5616d3023b0f439b0eadc4",
-  "sha256": "1fb0cwdj3hkadq6qccyw8qy0sdz8f00dj070firjgwg9w0s25psr",
-  "fetchSubmodules": false
+  "rev": "7203f8443e5f71b78a406833bb9a6bebf886ac93",
+  "path": "/nix/store/gwbfrmwpspf2kp046xhawiws1v7b2m28-orca",
+  "sha256": "1gz56y9hrm8wfxd56x2x60nk5p8bhblpcjprfk94024a6gdkwkjy",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false
 }

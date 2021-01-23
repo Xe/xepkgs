@@ -9,7 +9,6 @@ rec {
   cabytcini = pkgs.callPackage ./pkgs/cabytcini { };
   comma = pkgs.callPackage ./pkgs/comma { };
   deno = pkgs.callPackage ./pkgs/deno { };
-  discord = pkgs.callPackage ./pkgs/discord { };
   dwm = pkgs.callPackage ./pkgs/dwm { };
   gopls = pkgs.callPackage ./pkgs/gopls { };
   gruvbox-css = pkgs.callPackage ./pkgs/gruvbox-css { };

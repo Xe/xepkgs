@@ -3,7 +3,7 @@
     "hidden": false,
     "description": "Jobsets",
     "nixexprinput": "src",
-    "nixexprpath": "release.nix",
+    "nixexprpath": "hydra.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
     "enableemail": false,

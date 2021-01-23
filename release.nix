@@ -1,6 +1,8 @@
 { pkgs ? import <nixpkgs> { } }:
 
-{
+rec {
+  libutf = pkgs.callPackage ./pkgs/libutf { };
+
   # Programs
   cabytcini = pkgs.callPackage ./pkgs/cabytcini { };
   comma = pkgs.callPackage ./pkgs/comma { };

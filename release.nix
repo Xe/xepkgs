@@ -1,6 +1,8 @@
 { pkgs ? import <nixpkgs> { } }:
 
 rec {
+  # Libraries
+  girara = pkgs.callPackage ./pkgs/girara { gtk = pkgs.gtk3; };
   libutf = pkgs.callPackage ./pkgs/libutf { };
 
   # Programs

@@ -18,11 +18,7 @@ rec {
   johaus = pkgs.callPackage ./pkgs/johaus { };
   jvozba = pkgs.callPackage ./pkgs/jvozba { };
   lchat = pkgs.callPackage ./pkgs/lchat { inherit libutf; };
-  luakit = pkgs.callPackage ./pkgs/luakit {
-    inherit (pkgs.luajitPackages) luafilesystem;
-  };
   minica = pkgs.callPackage ./pkgs/minica { };
-  nix-simple-deploy = pkgs.callPackage ./pkgs/nix-simple-deploy { };
   orca = pkgs.callPackage ./pkgs/orca { };
   pridecat = pkgs.callPackage ./pkgs/pridecat { };
   quickserv = pkgs.callPackage ./pkgs/quickserv { };

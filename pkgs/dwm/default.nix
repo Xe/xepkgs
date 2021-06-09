@@ -1,4 +1,4 @@
-{ stdenv, fetchgit, libX11, libXinerama, libXft }:
+{ lib, stdenv, fetchgit, libX11, libXinerama, libXft }:
 
 let
   pname = "dwm";
@@ -17,8 +17,8 @@ in stdenv.mkDerivation {
   meta = {
     homepage = "https://suckless.org/";
     description = "Dynamic window manager for X";
-    license = stdenv.lib.licenses.mit;
-    maintainers = with stdenv.lib.maintainers; [ xe ];
-    platforms = with stdenv.lib.platforms; all;
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ xe ];
+    platforms = with lib.platforms; all;
   };
 }
